@@ -1,9 +1,10 @@
-package thederpgamer.modtemplate.element.items;
+package me.iron.mod.MYMODHERE.element.items;
 
-import api.config.BlockConfig;
 import org.schema.game.common.data.element.ElementKeyMap;
 import org.schema.schine.graphicsengine.core.GraphicsContext;
-import thederpgamer.modtemplate.element.ElementManager;
+
+import api.config.BlockConfig;
+import me.iron.mod.MYMODHERE.element.ElementManager;
 
 /**
  * <Description>

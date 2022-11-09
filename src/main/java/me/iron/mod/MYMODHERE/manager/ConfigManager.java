@@ -1,7 +1,7 @@
-package thederpgamer.modtemplate.manager;
+package me.iron.mod.MYMODHERE.manager;
 
 import api.mod.config.FileConfiguration;
-import thederpgamer.modtemplate.ModTemplate;
+import me.iron.mod.MYMODHERE.ModMain;
 
 /**
  * <Description>
@@ -17,7 +17,7 @@ public class ConfigManager {
 			"max-world-logs: 5"
 	};
 
-	public static void initialize(ModTemplate instance) {
+	public static void initialize(ModMain instance) {
 		mainConfig = instance.getConfig("config");
 		mainConfig.saveDefault(defaultMainConfig);
 	}

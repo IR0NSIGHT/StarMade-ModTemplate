@@ -1,9 +1,10 @@
-package thederpgamer.modtemplate.element.items;
+package me.iron.mod.MYMODHERE.element.items;
 
-import api.config.BlockConfig;
 import org.schema.game.common.data.element.ElementCategory;
 import org.schema.game.common.data.element.ElementInformation;
-import thederpgamer.modtemplate.ModTemplate;
+
+import api.config.BlockConfig;
+import me.iron.mod.MYMODHERE.ModMain;
 
 /**
  * <Description>
@@ -16,7 +17,7 @@ public abstract class Item {
 	protected ElementInformation itemInfo;
 
 	public Item(String name, ElementCategory category) {
-		itemInfo = BlockConfig.newElement(ModTemplate.getInstance(), name, new short[6]);
+		itemInfo = BlockConfig.newElement(ModMain.getInstance(), name, new short[6]);
 		itemInfo.setPlacable(false);
 		itemInfo.setPhysical(false);
 		BlockConfig.setElementCategory(itemInfo, category);

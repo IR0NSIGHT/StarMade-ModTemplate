@@ -1,9 +1,9 @@
-package thederpgamer.modtemplate.utils;
+package me.iron.mod.MYMODHERE.utils;
 
 import api.common.GameClient;
 import api.common.GameCommon;
-import thederpgamer.modtemplate.ModTemplate;
-import thederpgamer.modtemplate.manager.LogManager;
+import me.iron.mod.MYMODHERE.ModMain;
+import me.iron.mod.MYMODHERE.manager.LogManager;
 
 /**
  * <Description>
@@ -14,7 +14,7 @@ import thederpgamer.modtemplate.manager.LogManager;
 public class DataUtils {
 
 	public static String getResourcesPath() {
-		return ModTemplate.getInstance().getSkeleton().getResourcesFolder().getPath().replace('\\', '/');
+		return ModMain.getInstance().getSkeleton().getResourcesFolder().getPath().replace('\\', '/');
 	}
 
 	public static String getWorldDataPath() {

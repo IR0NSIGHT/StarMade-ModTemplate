@@ -1,10 +1,11 @@
-package thederpgamer.modtemplate.manager;
-
-import api.utils.textures.StarLoaderTexture;
-import org.schema.schine.graphicsengine.forms.Sprite;
-import thederpgamer.modtemplate.ModTemplate;
+package me.iron.mod.MYMODHERE.manager;
 
 import java.util.HashMap;
+
+import org.schema.schine.graphicsengine.forms.Sprite;
+
+import api.utils.textures.StarLoaderTexture;
+import me.iron.mod.MYMODHERE.ModMain;
 
 /**
  * <Description>
@@ -34,9 +35,9 @@ public class ResourceManager {
 					String textureName = texturePath.substring(texturePath.lastIndexOf('/') + 1);
 					try {
 						if(textureName.endsWith("icon")) {
-							textureMap.put(textureName, StarLoaderTexture.newIconTexture(ModTemplate.getInstance().getJarBufferedImage("thederpgamer/modtemplate/resources/textures/" + texturePath + ".png")));
+							textureMap.put(textureName, StarLoaderTexture.newIconTexture(ModMain.getInstance().getJarBufferedImage("me/iron/mod/MYMODHERE/resources/textures/" + texturePath + ".png")));
 						} else {
-							textureMap.put(textureName, StarLoaderTexture.newBlockTexture(ModTemplate.getInstance().getJarBufferedImage("thederpgamer/modtemplate/resources/textures/" + texturePath + ".png")));
+							textureMap.put(textureName, StarLoaderTexture.newBlockTexture(ModMain.getInstance().getJarBufferedImage("me/iron/mod/MYMODHERE/resources/textures/" + texturePath + ".png")));
 						}
 					} catch(Exception exception) {
 						LogManager.logException("Failed to load texture \"" + texturePath + "\"", exception);
@@ -46,7 +47,7 @@ public class ResourceManager {
 				//Load Sprites
 				for(String spriteName : spriteNames) {
 					try {
-						spriteMap.put(spriteName, StarLoaderTexture.newSprite(ModTemplate.getInstance().getJarBufferedImage("thederpgamer/modtemplate/resources/sprites/" + spriteName + ".png"), ModTemplate.getInstance(), spriteName, false, false));
+						spriteMap.put(spriteName, StarLoaderTexture.newSprite(ModMain.getInstance().getJarBufferedImage("me/iron/mod/MYMODHERE/resources/sprites/" + spriteName + ".png"), ModMain.getInstance(), spriteName, false, false));
 						spriteMap.get(spriteName).setName(spriteName);
 					} catch(Exception exception) {
 						LogManager.logException("Failed to load sprite \"" + spriteName + "\"", exception);

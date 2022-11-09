@@ -1,15 +1,16 @@
-package thederpgamer.modtemplate.element;
+package me.iron.mod.MYMODHERE.element;
 
-import api.config.BlockConfig;
+import java.util.ArrayList;
+
 import org.apache.commons.lang3.StringUtils;
 import org.schema.game.common.data.element.ElementCategory;
 import org.schema.game.common.data.element.ElementInformation;
 import org.schema.game.common.data.element.ElementKeyMap;
-import thederpgamer.modtemplate.element.block.Block;
-import thederpgamer.modtemplate.element.block.systems.chambers.ChamberBlock;
-import thederpgamer.modtemplate.element.items.Item;
 
-import java.util.ArrayList;
+import api.config.BlockConfig;
+import me.iron.mod.MYMODHERE.element.block.Block;
+import me.iron.mod.MYMODHERE.element.block.systems.chambers.ChamberBlock;
+import me.iron.mod.MYMODHERE.element.items.Item;
 
 /**
  * <Description>

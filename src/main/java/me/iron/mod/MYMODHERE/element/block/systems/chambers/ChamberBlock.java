@@ -1,10 +1,11 @@
-package thederpgamer.modtemplate.element.block.systems.chambers;
+package me.iron.mod.MYMODHERE.element.block.systems.chambers;
 
-import api.config.BlockConfig;
 import org.schema.game.common.data.blockeffects.config.StatusEffectType;
 import org.schema.game.common.data.element.ElementInformation;
-import thederpgamer.modtemplate.ModTemplate;
-import thederpgamer.modtemplate.element.ElementManager;
+
+import api.config.BlockConfig;
+import me.iron.mod.MYMODHERE.ModMain;
+import me.iron.mod.MYMODHERE.element.ElementManager;
 
 /**
  * <Description>
@@ -17,7 +18,7 @@ public abstract class ChamberBlock {
 	protected ElementInformation blockInfo;
 
 	public ChamberBlock(String name, short generalId, float chamberCapacity, StatusEffectType... statusEffects) {
-		blockInfo = BlockConfig.newChamber(ModTemplate.getInstance(), name, generalId, statusEffects);
+		blockInfo = BlockConfig.newChamber(ModMain.getInstance(), name, generalId, statusEffects);
 		blockInfo.chamberCapacity = chamberCapacity;
 		ElementManager.addChamber(this);
 	}

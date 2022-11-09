@@ -1,4 +1,4 @@
-package thederpgamer.modtemplate.utils;
+package me.iron.mod.MYMODHERE.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

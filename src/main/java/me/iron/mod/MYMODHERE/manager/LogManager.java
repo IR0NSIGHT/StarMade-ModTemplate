@@ -1,15 +1,16 @@
-package thederpgamer.modtemplate.manager;
+package me.iron.mod.MYMODHERE.manager;
 
-import api.DebugFile;
-import thederpgamer.modtemplate.ModTemplate;
-import thederpgamer.modtemplate.utils.DataUtils;
-import thederpgamer.modtemplate.utils.DateUtils;
-
-import javax.annotation.Nullable;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import javax.annotation.Nullable;
+
+import api.DebugFile;
+import me.iron.mod.MYMODHERE.ModMain;
+import me.iron.mod.MYMODHERE.utils.DataUtils;
+import me.iron.mod.MYMODHERE.utils.DateUtils;
 
 /**
  * <Description>
@@ -96,7 +97,7 @@ public class LogManager {
 				System.out.println(builder.toString());
 				logWriter.append(builder.toString()).append("\n");
 				logWriter.flush();
-				DebugFile.log(builder.toString(), ModTemplate.getInstance());
+				DebugFile.log(builder.toString(), ModMain.getInstance());
 			} catch(IOException exception) {
 				exception.printStackTrace();
 			}
